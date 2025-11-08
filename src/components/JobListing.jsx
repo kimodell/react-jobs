@@ -1,7 +1,6 @@
 import jobs from "../jobs.json";
 import { useState } from "react";
 
-
 const JobListing = ({ job }) => {
   //set full description to false to display short description initally
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -9,8 +8,8 @@ const JobListing = ({ job }) => {
   let description = job.description;
 
   //when showFullDescription is false, show a short form of description
-  if(!showFullDescription) {
-    description = description.substring(0, 90) + '...';
+  if (!showFullDescription) {
+    description = description.substring(0, 90) + "...";
   }
 
   return (
@@ -22,6 +21,11 @@ const JobListing = ({ job }) => {
         </div>
 
         <div className="mb-5">{description}</div>
+
+        {/*onClick setShowFullDescription to opposite of the state it was previously in */}
+        <button onClick={() => setShowFullDescription((prevState) => !prevState)} className="text-indigo-500 mb-5 hover:text-indigo-600">
+          { showFullDescription ? "Less" : "More" }
+        </button>
 
         <h3 className="text-indigo-500 mb-2">{job.salary} / year</h3>
 
