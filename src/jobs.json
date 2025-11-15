@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "f63c",
-      "title": "Jobby Job",
-      "type": "Remote",
-      "location": "Canada",
-      "description": "this is a job",
-      "salary": "$70K - 80K",
-      "company": {
-        "name": "Company 1",
-        "description": "Company things",
-        "contactEmail": "test@test.com",
-        "contactPhone": "4444444444"
-      }
     }
   ]
 }
