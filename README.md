@@ -12,7 +12,7 @@ First, run the development server:
 npm run dev
 ```
 
-Then, run the JSONserver:
+Then, run the JSON server:
 ```bash
 npx json-server --watch src/jobs.json --port 5000
 ```
