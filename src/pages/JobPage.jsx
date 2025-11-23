@@ -1,7 +1,4 @@
-// import { useReducer } from "react";
-// import { useState, useEffect } from "react";
 import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
-// import Spinner from "../components/Spinner";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { toast } from "react-toastify";
 
@@ -21,24 +18,6 @@ const JobPage = ({ deleteJob }) => {
     toast.success('Job deleted succesfully');
     navigate("/jobs");
   };
-  // const [job, setJob] = useState(null);
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   const fetchJob = async () => {
-  //     try {
-  //       const res = await fetch(`/api/jobs/${id}`);
-  //       const data = await res.json();
-  //       setJob(data);
-  //     } catch (error) {
-  //       console.log("Error fetching data", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchJob();
-  // }, []);
 
   return (
     <>
